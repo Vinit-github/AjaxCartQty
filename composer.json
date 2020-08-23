@@ -1,0 +1,29 @@
+{
+  "name": "Xlab/AjaxCartQty",
+  "description": "AJAX Shopping Cart Update without having to click 'update to cart' button."
+,
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0|~7.2.0"
+  },
+  "type":"magento2-module",
+  "version": "1.0.1",
+  "license":[
+    "proprietary"
+  ],
+  "authors":[
+    {
+      "name" : "Vinit",
+      "email" : "",
+      "homepage" : "https://www.vinitkumar.com",
+      "role" : "Developer"
+    }
+  ],
+  "autoload":{
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Xlab\\AjaxCartQty\\" : ""
+    }
+  }
+}
