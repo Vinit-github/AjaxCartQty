@@ -74,7 +74,7 @@
                 <div class="details-qty qty">
                     <label class="label" data-bind="i18n: 'Qty', attr: {
                            for: 'cart-item-'+item_id+'-qty'}"></label>
-                    <span class="minus">-</span>       
+                    <button type="button" data-bind="attr: {title: $t('Decrease the quantity'), 'data-cart-item': item_id, 'data-item-qty': qty}" class="decreasing-qty">-</button>     
                     <input data-bind="attr: {
                            id: 'cart-item-'+item_id+'-qty',
                            'data-cart-item': item_id,
@@ -84,7 +84,7 @@
                            type="number"
                            size="4"
                            class="item-qty cart-item-qty">
-                    <span class="plus">+</span>       
+                   <button type="button" data-bind="attr: {title: $t('Increase the quantity'), 'data-cart-item': item_id, 'data-item-qty': qty}" class="increasing-qty">+</button>   
                     <button data-bind="attr: {
                            id: 'update-cart-item-'+item_id,
                            'data-cart-item': item_id,
